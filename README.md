@@ -15,25 +15,28 @@ A simple authentication backend built with Dart using Shelf. It supports:
 ## 📁 Project Structure
 
 
+```text
 dart_backend/  
 ├── bin/  
-│ └── main.dart # App entry point  
+│   └── main.dart                 # App entry point  
 ├── lib/  
-│ ├── auth/  
-│ │ ├── auth_middleware.dart # Middleware to check JWT  
-│ │ ├── jwt_service.dart # JWT generation & blacklist  
-│ │ ├── otp_service.dart # OTP generation  
-│ ├── handlers/  
-│ │ ├── auth_handler.dart # Signup, Signin, OTP, Reset, Logout  
-│ │ └── protected_handler.dart # Authenticated route example  
-│ ├── models/  
-│ │ └── user_model.dart # User model class  
-│ ├── services/  
-│ │ └── user_service.dart # User business logic  
-│ ├── utils/  
-│ │ ├── email_sender.dart # Mock email sender (prints OTP)  
-│ │ └── response_helpers.dart # JSON response helpers  
+│   ├── auth/  
+│   │   ├── auth_middleware.dart  # Middleware to check JWT  
+│   │   ├── jwt_service.dart      # JWT generation & blacklist  
+│   │   ├── otp_service.dart      # OTP generation  
+│   ├── handlers/  
+│   │   ├── auth_handler.dart     # Signup, Signin, OTP, Reset, Logout  
+│   │   └── protected_handler.dart# Authenticated route example  
+│   ├── models/  
+│   │   └── user_model.dart       # User model class  
+│   ├── services/  
+│   │   └── user_service.dart     # User business logic  
+│   ├── utils/  
+│   │   ├── email_sender.dart     # Mock email sender (prints OTP)  
+│   │   └── response_helpers.dart # JSON response helpers  
 ├── pubspec.yaml  
+```
+
 
 
 ---
